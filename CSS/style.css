@@ -432,6 +432,7 @@ button.blue {
   font-weight: 400;
   padding-left: 10px;
   text-transform: uppercase;
+  z-index: 2;
 }
 .news_type:before {
   content: "";
