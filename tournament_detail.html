@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAST THUNDER | Официальная киберпортивная площадка | FAST THUNDER </title>
+    <link rel="stylesheet" href="CSS/swiper-bundle.min.css">
+    <link rel="stylesheet" href="CSS/splide.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="script/script.js" defer></script>
+    <script src="script/swiper-bundle.min.js" defer></script>
+    <script src="script/swipers.js" defer></script>
+    <script src="script/splide.min.js" defer></script>
+    <script src="script/tabs.js" defer></script>
+</head>
+<body>
+    <header>   
+        <div class="container head">
+            <div class="nav_block social">
+                <a href="" class="icon_discord"></a>
+                <a href="" class="icon_vkontakte"></a>
+                <a href="" class="icon_youtube"></a>
+            </div>
+            <nav class="nav_block navigation slide_left">
+                    <a href="/index.html">Главная</a>
+                    <a href="/tournaments.html">Турниры</a>
+                    <a href="">Регламент</a>
+            </nav>
+            <div class="logo_container">
+                <span class="logo_back"></span>
+                <div class="logo">
+                    <span class="f">Fas</span><span class="t">T</span>
+                </div>
+            </div>
+            <nav class="nav_block navigation slide_right">
+                <a href="">Контакты</a>
+                <a href="/news.html">Новости</a>
+                <a href="/broadcast.html">Трансляции</a>
+            </nav>
+            <div class="nav_block profile">
+                <div class="bell_container">
+                    <div class="icon_bell" >
+                        <span class="icon_label active"></span>
+                    </div>
+                    <div class="bell_popup">
+                        <span class="close_btn" id="close_bell"></span>
+                        <h2>Уведомления</h2>
+                        <div class="bell_popup_message">
+                            Добро пожаловать!
+                        </div>
+                        <div class="bell_popup_message">
+                            Добро пожаловать!
+                        </div>
+                    </div>
+                </div>
+                <sapn class="icon_profile" id="profile_btn"></ы>
+            </div>
+        </div>     
+    </header>
+    <div class="main_menu profile_menu">
+        <span class="close_btn" id="close_profile"></span>
+        <span class="main_menu_back"></span>
+        <div class="main_menu_content">
+            <h2 class="pre_title">Авторизация</h2>
+            <form class="authorisation_form" action="">
+                <p class="input_label">Логин</p>
+                <input type="email" class="main_form" placeholder="Введите логин">
+                <p class="input_label">Пароль</p>
+                <input type="password" class="main_form" placeholder="Введите пароль">
+                <button type="submit" class="common_button">Войти</button>
+            </form>
+        </div> 
+    </div>
+    <!--Окно создания команды-->
+    <div class="team_popup" id="create_team_popup">
+        <div class="team_container" id="create_team_container">
+            <span class="close_btn" id="close_create_team"></span>
+            <h2>Создание команды</h2>
+            <p class="input_label">Название команды</p>
+            <input class="main_form" type="text" placeholder="Придумайте название команды">
+            <p class="input_label">Тег команды</p>
+            <input class="main_form" type="text" placeholder="Придумайте тег">
+            <p class="input_label">Пароль</p>
+            <input class="main_form" type="password" placeholder="Придумайте пароль">
+            <p class="input_label">Подтверждение пароля</p>
+            <input class="main_form" type="password" placeholder="Подтвердите пароль">
+            <button class="common_button">Создать</button>
+        </div>
+    </div>
+    <!--Окно команды-->
+    <div class="team_popup" id="team1">
+        <div class="team_container" id="team1container">
+            <span class="close_btn" id="close_team1"></span>
+            <h2>Disconnect Team</h2>
+        </div>
+    </div>
+        <div class="tournament_detail_head">
+            <img src="images/merkava.jpeg" alt="">
+            <h1 class="main_title center">Fasthunder Cup</h1>
+            <p class="tournament_detail_head_prize_block">50000 руб.</p>
+            <p class="tournament_detail_date">14/01/2024</p>
+            <div class="container tournament_detail_head_content">
+                <div class="status open">OPEN</div>
+                <span class="main_line"></span>
+                <div class="specification">20:00 МСК</div>
+                <span class="main_line"></span>
+                <div class="specification">5x5 РБ</div>
+                <span class="main_line"></span>
+                <div class="specification">Танковые</div>
+                <span class="main_line"></span>
+                <div class="specification">30/32</div>
+                </div>
+            </div> 
+        </div>
+        <div class="main_back tournament_detail_back">
+            <div class="tabs_block">
+                <div class="container">
+                    <div class="tabs_content">
+                        <span class="tabs_btn" id="1" data-tab="#tab1">О турнире</span>
+                        <span class="tabs_btn" id="2" data-tab="#tab2">Команды</span>
+                        <span class="tabs_btn" id="3" data-tab="#tab3">Регламент</span>
+                        <span class="tabs_btn" id="4" data-tab="#tab4">Турнирная сетка</span>
+                    </div>
+                </div>
+            </div>
+            <div class="tournament_detail_block">
+                <div class="tabs_content_item" id="tab1">
+                    <div class="tournament_prize_block">
+                        <div class="tournament_prize_item second">
+                            <h4>2</h4>
+                            <p>25000 р.</p>
+                        </div>
+                        <div class="tournament_prize_item first">
+                            <h4>1</h4>
+                            <p>50000 р.</p>
+                        </div>
+                        <div class="tournament_prize_item third">
+                            <h4>3</h4>
+                            <p>10000 р.</p>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <h2 class="pre_title">Расписание турнира</h2>
+                        <div class="tournament_time">
+                            <div class="tournament_time_item">
+                                <h3>Время окончания регистрации:</h3>
+                                <div class="date_time orange">10/01/24 20:00 МСК</div>
+                            </div>
+                            <span></span>
+                            <div class="tournament_time_item">
+                                <h3>Время начала турнира:</h3>
+                                <div class="date_time orange">10/01/24 20:10 МСК</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <h2 class="pre_title">Локации турнира</h2>
+                    </div>
+                    <div class="location_swiper swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="images/1dc65bb813e8f0cd069dce188a6b6c54640dcd91.jpeg" alt="">
+                                <h2 class="tournament_types_title">Берлин</h2>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/poland.jpg" alt="">
+                                <h2 class="tournament_types_title">Польша</h2>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/vietnam.jpg" alt="">
+                                <h2 class="tournament_types_title">Вьетнам</h2>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/mountain.jpg" alt="">
+                                <h2 class="tournament_types_title">Карелия</h2>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/1dc65bb813e8f0cd069dce188a6b6c54640dcd91.jpeg" alt="">
+                                <h2 class="tournament_types_title">Берлин</h2>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/poland.jpg" alt="">
+                                <h2 class="tournament_types_title">Польша</h2>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/vietnam.jpg" alt="">
+                                <h2 class="tournament_types_title">Вьетнам</h2>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                    <div class="container">
+                        <h2 class="pre_title">Доступная техника</h2>
+                        <div class="vehicle_block">
+                            <img class="back_img" src="images/USA.jpg" alt="">
+                            <div class="vehicle_card">
+                                <img src="images/m1a1.jpeg" alt="">
+                                <p>M1A1</p>
+                            </div>
+                            <div class="vehicle_card">
+                                <img src="images/m1a1.jpeg" alt="">
+                                <p>M1A1</p>
+                            </div>
+                            <div class="vehicle_card">
+                                <img src="images/m1a1.jpeg" alt="">
+                                <p>M1A1</p>
+                            </div>
+                            <div class="vehicle_card">
+                                <img src="images/m1a1.jpeg" alt="">
+                                <p>M1A1</p>
+                            </div>
+                            <div class="vehicle_card">
+                                <img src="images/m1a1.jpeg" alt="">
+                                <p>M1A1</p>
+                            </div>
+                            <div class="vehicle_card">
+                                <img src="images/m1a1.jpeg" alt="">
+                                <p>M1A1</p>
+                            </div>
+                            <div class="vehicle_card">
+                                <img src="images/m1a1.jpeg" alt="">
+                                <p>M1A1</p>
+                            </div>
+                            <div class="vehicle_card">
+                                <img src="images/m1a1.jpeg" alt="">
+                                <p>M1A1</p>
+                            </div>
+                            <div class="vehicle_card">
+                                <img src="images/m1a1.jpeg" alt="">
+                                <p>M1A1</p>
+                            </div>
+                            <div class="vehicle_card">
+                                <img src="images/m1a1.jpeg" alt="">
+                                <p>M1A1</p>
+                            </div>
+                            <div class="vehicle_card">
+                                <img src="images/m1a1.jpeg" alt="">
+                                <p>M1A1</p>
+                            </div>
+                            <div class="vehicle_card">
+                                <img src="images/m1a1.jpeg" alt="">
+                                <p>M1A1</p>
+                            </div>
+                        </div>
+                        <div class="vehicle_block">
+                            <img class="back_img" src="images/USSR.png" alt="">
+                            <div class="vehicle_card">
+                                <img src="images/m1a1.jpeg" alt="">
+                                <p>T-80 BVM</p>
+                            </div>
+                            <div class="vehicle_card">
+                                <img src="images/m1a1.jpeg" alt="">
+                                <p>T-80 BVM</p>
+                            </div>
+                            <div class="vehicle_card">
+                                <img src="images/m1a1.jpeg" alt="">
+                                <p>T-80 BVM</p>
+                            </div>
+                            <div class="vehicle_card">
+                                <img src="images/m1a1.jpeg" alt="">
+                                <p>T-80 BVM</p>
+                            </div>
+                            <div class="vehicle_card">
+                                <img src="images/m1a1.jpeg" alt="">
+                                <p>T-80 BVM</p>
+                            </div>
+                            <div class="vehicle_card">
+                                <img src="images/m1a1.jpeg" alt="">
+                                <p>T-80 BVM</p>
+                            </div>
+                            <div class="vehicle_card">
+                                <img src="images/m1a1.jpeg" alt="">
+                                <p>T-80 BVM</p>
+                            </div>
+                            <div class="vehicle_card">
+                                <img src="images/m1a1.jpeg" alt="">
+                                <p>T-80 BVM</p>
+                            </div>
+                        </div>
+                        <div class="vehicle_block">
+                            <img class="back_img" src="images/german.jpg" alt="">
+                            <div class="vehicle_card">
+                                <img src="images/m1a1.jpeg" alt="">
+                                <p>Leopard 2A7</p>
+                            </div>
+                            <div class="vehicle_card">
+                                <img src="images/m1a1.jpeg" alt="">
+                                <p>Leopard 2A7</p>
+                            </div>
+                            <div class="vehicle_card">
+                                <img src="images/m1a1.jpeg" alt="">
+                                <p>Leopard 2A7</p>
+                            </div>
+                            <div class="vehicle_card">
+                                <img src="images/m1a1.jpeg" alt="">
+                                <p>Leopard 2A7</p>
+                            </div>
+                            <div class="vehicle_card">
+                                <img src="images/m1a1.jpeg" alt="">
+                                <p>Leopard 2A7</p>
+                            </div>
+                            <div class="vehicle_card">
+                                <img src="images/m1a1.jpeg" alt="">
+                                <p>Leopard 2A7</p>
+                            </div>
+                            <div class="vehicle_card">
+                                <img src="images/m1a1.jpeg" alt="">
+                                <p>Leopard 2A7</p>
+                            </div>
+                            <div class="vehicle_card">
+                                <img src="images/m1a1.jpeg" alt="">
+                                <p>Leopard 2A7</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs_content_item" id="tab2">
+                    <div class="container">
+                        <div class="button_container">
+                            <button class="common_button" id="create_team">Создать команду</button>
+                            <form action="" class="search_team_form">
+                                <input class="main_form" type="text" placeholder="Поиск">
+                                <div class="search_button"></div>
+                            </form>
+                        </div>
+                        <div class="tournaments_teams">
+                            <div class="tournaments_teams_filter">
+                                <div class="tournaments_teams_filter_element number">№</div>
+                                <div class="tournaments_teams_filter_element">Название</div>
+                                <div class="tournaments_teams_filter_element">Командир</div>
+                                <div class="tournaments_teams_filter_element">Участники</div>
+                                <div class="tournaments_teams_filter_element">Готовность</div>
+                            </div>
+
+                            <div class="team">
+                                <div class="team_number">1</div>
+                                <div class="team_name">DSNC</div>
+                                <div class="team_captain">Oscar</div>
+                                <div class="team_structure">5/7(+2)</div>
+                                <div class="team_ready"><img src="images/check-mark.svg" alt=""></div>
+                            </div>
+                            <div class="team">
+                                <div class="team_number">2</div>
+                                <div class="team_name">DSNC</div>
+                                <div class="team_captain">Oscar_Adgdfggdg</div>
+                                <div class="team_structure">5/7(+2)</div>
+                                <div class="team_ready not_ready"><img src="images/cross.svg" alt=""></div>
+                            </div>
+                            <div class="team">
+                                <div class="team_number">3</div>
+                                <div class="team_name">DSNC</div>
+                                <div class="team_captain">Oscar</div>
+                                <div class="team_structure">5/7(+2)</div>
+                                <div class="team_ready"><img src="images/cross.svg" alt=""></div>
+                            </div>
+                            <div class="team">
+                                <div class="team_number">1</div>
+                                <div class="team_name">DSNC</div>
+                                <div class="team_captain">Oscar</div>
+                                <div class="team_structure">5/7(+2)</div>
+                                <div class="team_ready"><img src="images/check-mark.svg" alt=""></div>
+                            </div>
+                            <div class="team">
+                                <div class="team_number">2</div>
+                                <div class="team_name">DSNC</div>
+                                <div class="team_captain">Oscar_Adgdfggdg</div>
+                                <div class="team_structure">5/7(+2)</div>
+                                <div class="team_ready not_ready"><img src="images/check-mark.svg" alt=""></div>
+                            </div>
+                            <div class="team">
+                                <div class="team_number">3</div>
+                                <div class="team_name">DSNC</div>
+                                <div class="team_captain">Oscar</div>
+                                <div class="team_structure">5/7(+2)</div>
+                                <div class="team_ready"><img src="images/check-mark.svg" alt=""></div>
+                            </div>
+                            <div class="team">
+                                <div class="team_number">1</div>
+                                <div class="team_name">DSNC</div>
+                                <div class="team_captain">Oscar</div>
+                                <div class="team_structure">5/7(+2)</div>
+                                <div class="team_ready"><img src="images/check-mark.svg" alt=""></div>
+                            </div>
+                            <div class="team">
+                                <div class="team_number">2</div>
+                                <div class="team_name">DSNC</div>
+                                <div class="team_captain">Oscar_Adgdfggdg</div>
+                                <div class="team_structure">5/7(+2)</div>
+                                <div class="team_ready not_ready"><img src="images/check-mark.svg" alt=""></div>
+                            </div>
+                            <div class="team">
+                                <div class="team_number">3</div>
+                                <div class="team_name">DSNC</div>
+                                <div class="team_captain">Oscar</div>
+                                <div class="team_structure">5/7(+2)</div>
+                                <div class="team_ready"><img src="images/check-mark.svg" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs_content_item" id="tab3">
+                    <div class="container">
+                        <h2 class="pre_title">
+                            1. Цели и задачи турнира
+                        </h2>
+                        <p> 1.1. Целью турнира является определение лучшего игрока среди участников.</p>
+                        <p>1.2. Задачами турнира являются повышение уровня навыков игры, обмен опытом, выявление слабых и сильных сторон различных стратегий и тактик игры.</p>
+                        <h2 class="pre_title">2. Правила турнира</h2>
+                        <p>2.1. Турнир проводится на основе игрового режима “War Thunder”. </p>
+                        <p>2.2. Все участники должны быть старше 14 лет и иметь активную учетную запись в War Thunder.</p>
+                        <p>2.3. Игроки обязаны соблюдать правила игры и этикета в чате.</p>
+                        <p> Участники обязуются не использовать сторонние программы и модификации, которые могут дать им нечестное преимущество.</p>
+                        <p> 2.5. Организатор оставляет за собой право дисквалифицировать любого участника, нарушившего правила турнира или этикета.</p>
+                        <h2 class="pre_title">
+                            3. Формат турнира
+                        </h2>
+                        <p>3.1. Формат турнира - командный (2-6 игроков в команде).</p>
+                        <p> 3.2. Продолжительность каждого матча - 10 минут.</p>
+                        <p>3.3. Каждый матч проводится до 3 побед.</p>
+                        <h2 class="pre_title">
+                            Определение победителей
+                        </h2>
+                        <p>4.1. Победителем турнира становится команда, одержавшая наибольшее количество побед.</p>
+                        <p>4.2 В случае ничейного результата на последнем месте в турнирной таблице, проводится дополнительный матч до победы.</p>
+                        <h2 class="pre_title">
+                            5 .Награждение
+                        </h2>
+                        <p> 5.1. Победители турнира награждаются ценными призами и подарками от организатора.</p>
+                        <p>5.2. Участники турнира, занявшие призовые места, также награждаются призами.</p>
+                        <p>5.3. Организаторы оставляют за собой право учреждать дополнительные призы для участников турнира.</p>
+                        <h2 class="pre_title">
+                            6. Дополнительные услови
+                        </h2>
+                        <p>6.1. Регламент турнира может быть изменен по решению организаторов. </p>
+                        <p>6.2. Участник, желающий принять участие в турнире, должен подтвердить свое участие, следуя инструкциям организаторов.</p>
+                    </div>
+                </div>
+                <div class="tabs_content_item" id="tab4">
+
+                </div>
+            </div>
+        </div>
+
+
+        <footer>
+            <div class="container">
+                <div class="foot_mid">
+                    <div class="foot_mid_half left">
+                        <div class="footer_logo_container">
+                            <div class="logo">
+                                <span class="f">Fas</span><span class="t">T</span>
+                            </div>
+                        </div>
+                        <a href="">Пользовательское соглашение</a>
+                        <a href="">Политика конфиденциальности</a>
+                    </div>
+                    <div class="foot_mid_half right">
+                        <div class="foot_mid_item">
+                            <h3>Навигация</h3>
+                            <a href="">Главная</a>
+                            <a href="">Регламент</a>
+                            <a href="">Турниры</a>
+                        </div>
+                        <div class="foot_mid_item">
+                            <h3>Медиа</h3>
+                            <a href="">Контакты</a>
+                            <a href="">Трансляции</a>
+                            <a href="">Новости</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_social">
+                    <a href="" class="icon_discord"></a>
+                    <a href="" class="icon_vkontakte"></a>
+                    <a href="" class="icon_youtube"></a>
+                    <a href="" class="icon_telegram"></a>
+                    <a href="" class="icon_twitch"></a>
+                </div>
+                <div class="foot_cockie">
+                    Наш сайт использует технологию "cockie" для улучшения его работы
+                </div>
+            </div>
+            <div class="footer_copyright">
+                <p>© FasT Thunder 2024</p>
+            </div>
+        </footer>
+</body>
+</html>
